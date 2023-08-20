@@ -1,0 +1,335 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(#9baa71, #0c4d4d);
+  background-repeat: no-repeat;
+}
+/* Header styles */
+header {
+  background-color: rgb(53, 48, 48, 0.95);
+  border-radius: 20px;
+  padding: 10px 0;
+  width: 96%;
+  margin: 10px auto;
+  box-shadow: #2b2b2b96 8px 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  position: relative;
+  margin: 0 auto;
+  width: calc(90rem, 90%);
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh 3rem);
+  /* Center content within the viewport height */
+}
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+
+  opacity: 0;
+}
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+}
+main > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 60%;
+  border: none;
+  margin: 1.125rem 0 1.1875rem;
+}
+main > div p {
+  line-height: 1.6;
+}
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+main div a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+.about-projects {
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.swiper {
+  width: 50%;
+  height: 50vh;
+}
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: end;
+  background-image: url(imgs/IMG_20230820_090744.jpg);
+}
+.swiper-slide div {
+  border-radius: 15px;
+}
+.swiper-slide h2 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+.swiper-slide p {
+  color: #dadada;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6rem;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.screen {
+  display: none;
+}
+.active-screen {
+  display: block;
+  display: flex;
+  margin: 10% 10%;
+}
+
+.featured-post {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(85, 83, 83, 0.226) 10px 10px;
+  padding: 20px;
+  margin: 40px 0px;
+  width: fit-content;
+  height: 500px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 30px;
+}
+#featured-post {
+  margin-top: 180px;
+}
+.featured-post img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.post-content {
+  flex: 1;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-button {
+  font-size: 16px;
+  font-weight: bolder;
+  width: fit-content;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 40%px;
+  background-color: transparent;
+}
+.post-button :hover {
+  cursor: pointer;
+  background-color: #494949da;
+  color: #afbb8e;
+}
+.post-button {
+  display: flex;
+  margin: 25px 90px;
+}
+
+.dropdown {
+  border-radius: 10px;
+  padding: 0 40px;
+  background-color: rgb(53, 48, 48, 0.8);
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: flex-start;
+  min-width: max-content;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.dropdown-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown img {
+  width: 25px;
+  padding-right: 13px;
+}
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.project-imgs {
+  width: 150px;
+}
+/* Footer styles */
+footer {
+  background-color: #8a8a8a59; /* Light gray color */
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.about-content {
+  margin: auto;
+  max-width: max-content;
+}
+.about-information {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 100px;
+}
+.about-information div {
+  max-width: 800px;
+  display: flex;
+}
+.about-information div div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 25px;
+}
+.container {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(85, 83, 83, 0.226) 10px 10px;
+  padding: 20px;
+  margin: 40px 0px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+}
+.workig-experience {
+}
+.list-of-skills li {
+  list-style-type: none;
+}
+.list-of-skills li img {
+  width: 40px;
+}

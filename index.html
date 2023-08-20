@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Personal Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showScreen('main-screen')">Home</a></li>
+          <li><a href="#" onclick="showScreen('about-screen')">About me</a></li>
+          <li>
+            <div class="dropdown-menu">
+              <a href="#">Contact</a>
+              <ul class="dropdown">
+                <li class="dropdown-item">
+                  <div class="dropdown-item-content">
+                    <img src="telegram.svg" alt="" />
+                    <a href="#">Telegram</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <div class="dropdown-item-content">
+                    <img src="imgs/github.svg" alt="" />
+                    <a href="https://github.com/CHIKOJgg">GitHub</a>
+                  </div>
+                </li>
+                <li class="dropdown-item">
+                  <img src="imgs/instagram.svg" alt="" />
+                  <div class="dropdown-item-content">
+                    <a href="https://www.instagram.com/non.accessable/">
+                      Instagram</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="screen active-screen" id="main-screen">
+      <div class="about-projects container">
+        <span>txt</span>
+        <h1>My projects</h1>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          nobis quae aliquam,
+        </p>
+        <a href="#">read more</a>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <div>
+              <img src="imgs/diceimg.png" alt="" class="project-imgs" />
+              <h1>Dicegame</h1>
+              <p>prjct1 title</p>
+              <a href=""><img src="imgs/github.svg" />frf</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <div>
+              <h1>prjt2 tittile</h1>
+              <p>prjct2 title</p>
+              <a href=""><img src="imgs/github.svg" />frf</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--three">
+            <div>
+              <h1>prjt3 tittile</h1>
+              <p>prjct3 title</p>
+              <a href=""><img src="imgs/github.svg" />frf</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--four">
+            <div>
+              <h1>prjt4 tittile</h1>
+              <p>prjct4 title</p>
+              <a href=""><img src="imgs/github.svg" />frf</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--five">
+            <div>
+              <h1>prjt5rrrrrrrrrrr tittile</h1>
+              <p>prjct5 title</p>
+              <a href=""><img src="imgs/github.svg" />frf</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <img src="imgs/IMG_20230820_090744.jpg" alt="" class="bg" />
+      <img src="imgs/IMG_20230820_090744.jpg" alt="" class="bg2" /> -->
+    </main>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <h2>Modal Window</h2>
+        <p>Here's more content about the article...</p>
+      </div>
+    </div>
+    <section class="screen" id="about-screen">
+      <div class="about-content">
+        <div class="about-information">
+          <div>
+            <img src="imgs/images.png" alt="" />
+            <div>
+              <h1 class="name">Miroslay Pirasyk</h1>
+              <p>
+                Hello, I'm [Your Name] and I'm a frontend developer passionate
+                about creating engaging user experiences...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container skills">
+          <div>
+            <h1>My stack of technologies</h1>
+            <ul class="list-of-skills">
+              <li>
+                <div>
+                  <img src="imgs/javascript-js.svg" alt="" />
+                  <span>JavaScript</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/favicon.ico" alt="" /><span>React</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/file-type-html.svg" alt="" /><span>HTML</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/file-type-css.svg" alt="" /><span>CSS</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container workig-experience"><h1>work experience</h1></div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
