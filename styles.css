@@ -11,8 +11,8 @@ p {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(#9baa71, #0c4d4d);
-  background-repeat: no-repeat;
+  background: url(imgs/SimpleShiny.svg);
+  background-repeat: round;
 }
 /* Header styles */
 header {
@@ -54,9 +54,9 @@ main {
   position: relative;
   margin: 0 auto;
   width: calc(90rem, 90%);
-  min-height: 100vh;
   column-gap: 3rem;
   padding-block: min(20vh 3rem);
+
   /* Center content within the viewport height */
 }
 .bg {
@@ -86,7 +86,7 @@ main > div h1 {
   font-weight: 900;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
   background-color: #005baa;
-  background-image: linear-gradient(45deg, #005baa, #000);
+  background-image: linear-gradient(45deg, #bdbdbd, #ffffff);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -127,18 +127,23 @@ main div a {
   flex-direction: column;
   justify-content: flex-start;
 }
+.about-projects a {
+  border-radius: 10px;
+  border: 0;
+}
 .swiper {
-  width: 50%;
+  width: 60%;
   height: 50vh;
+  border-radius: 20px;
 }
 .swiper-slide {
-  width: 18.75rem;
-  height: 28.125rem;
   display: flex;
   flex-direction: column;
   align-items: self-start;
   justify-content: end;
-  background-image: url(imgs/IMG_20230820_090744.jpg);
+  background-image: url(imgs/Meteor.svg);
+  border-radius: 20px;
+  margin: 0 10px;
 }
 .swiper-slide div {
   border-radius: 15px;
@@ -298,6 +303,7 @@ footer {
 .about-content {
   margin: auto;
   max-width: max-content;
+  color: #d1d1d1;
 }
 .about-information {
   display: flex;
