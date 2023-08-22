@@ -13,7 +13,7 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   background: url(imgs/SimpleShiny.svg) no-repeat center top/cover ;
-  background-repeat: round;
+  
   display: flex;
   flex-direction: column;
   min-height: 100vh;
