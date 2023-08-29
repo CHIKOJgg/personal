@@ -1,5 +1,13 @@
 /* Reset some default styles */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@keyframes dropdownAnim {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 155px;
+  }
+}
 
 body,
 h1,
@@ -12,8 +20,7 @@ p {
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background: url(imgs/SimpleShiny.svg) no-repeat center top/cover ;
-  
+  background: url(imgs/SimpleShiny.svg) round;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -37,7 +44,6 @@ nav ul {
 nav ul ul {
   display: none;
   position: absolute;
-  background-color: #333;
 }
 
 nav ul li {
@@ -198,7 +204,7 @@ main div a {
 .active-screen {
   display: block;
   display: flex;
-  margin: 10% 10%;
+  margin: 0 10%;
 }
 
 .featured-post {
@@ -253,6 +259,7 @@ main div a {
   border-radius: 10px;
   padding: 0 40px;
   background-color: rgb(53, 48, 48, 0.8);
+  animation: dropdownAnim 200ms;
 }
 
 .dropdown-item {
@@ -317,11 +324,17 @@ main div a {
 }
 /* Footer styles */
 footer {
-  background-color: #8a8a8a59; /* Light gray color */
+  background-color: rgb(53, 48, 48, 0.95);
   padding: 10px 0;
-  width: 100%;
+  width: 98%;
   text-align: center;
   bottom: 0;
+  border-radius: 10px;
+  margin: 7px 1%;
+  box-shadow: #2b2b2b96 5px 4px;
+}
+footer p {
+  color: #d1d1d1;
 }
 .about-content {
   margin: auto;
@@ -343,6 +356,11 @@ footer {
   width: 400px;
   margin: 25px;
 }
+.profilephoto {
+  width: 35%;
+
+  border-radius: 15px;
+}
 .container {
   margin-bottom: 60px;
   display: flex;
@@ -353,6 +371,7 @@ footer {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.11);
   border-radius: 13px;
+  min-height: 300px;
 }
 .workig-experience {
 }
@@ -361,4 +380,21 @@ footer {
 }
 .list-of-skills li img {
   width: 40px;
+}
+.main-wrapper {
+  min-height: 100vh;
+}
+#main-screen {
+  min-height: 70vh;
+  margin: 10%;
+}
+.intro-text {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: monospace, sans-serif;
+  font-style: oblique;
+}
+.name {
+  font-size: 35px;
 }
