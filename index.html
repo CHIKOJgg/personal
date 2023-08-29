@@ -14,7 +14,7 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#" onclick="showScreen('main-screen')">Home</a></li>
+          <li><a href="#" onclick="showScreen('main-screen')">Portfolio</a></li>
           <li><a href="#" onclick="showScreen('about-screen')">About me</a></li>
           <li>
             <div class="dropdown-menu">
@@ -22,7 +22,7 @@
               <ul class="dropdown">
                 <li class="dropdown-item">
                   <div class="dropdown-item-content">
-                    <img src="telegram.svg" alt="" />
+                    <img src="imgs/telegram.svg" alt="" />
                     <a href="#">Telegram</a>
                   </div>
                 </li>
@@ -46,17 +46,16 @@
         </ul>
       </nav>
     </header>
-
-    <main class="screen active-screen" id="main-screen">
+    <main class="screen" id="main-screen">
       <div class="about-projects container">
         <span>txt</span>
         <h1>My projects</h1>
         <hr />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          nobis quae aliquam,
+          There are examples of my works. I developed itwith patience and used
+          all abilities. You can learn more about each one if you click on read
+          more
         </p>
-        <a href="#">read more</a>
       </div>
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -69,7 +68,7 @@
                 <div class="swiper-button-wrapper">
                   <a href=""
                     ><img src="imgs/github.svg" />
-                    <p>see more</p></a
+                    <p>read more</p></a
                   >
                 </div>
               </div>
@@ -83,7 +82,7 @@
                 <div class="swiper-button-wrapper">
                   <a href=""
                     ><img src="imgs/github.svg" />
-                    <p>see more</p></a
+                    <p>read more</p></a
                   >
                 </div>
               </div>
@@ -97,7 +96,7 @@
                 <div class="swiper-button-wrapper">
                   <a href=""
                     ><img src="imgs/github.svg" />
-                    <p>see more</p></a
+                    <p>read more</p></a
                   >
                 </div>
               </div>
@@ -111,7 +110,7 @@
                 <div class="swiper-button-wrapper">
                   <a href=""
                     ><img src="imgs/github.svg" />
-                    <p>see more</p></a
+                    <p>read more</p></a
                   >
                 </div>
               </div>
@@ -125,7 +124,7 @@
                 <div class="swiper-button-wrapper">
                   <a href=""
                     ><img src="imgs/github.svg" />
-                    <p>see more</p></a
+                    <p>read more</p></a
                   >
                 </div>
               </div>
@@ -134,10 +133,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <!-- <img src="imgs/IMG_20230820_090744.jpg" alt="" class="bg" />
-      <img src="imgs/IMG_20230820_090744.jpg" alt="" class="bg2" /> -->
     </main>
-
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close-button" id="close-button">&times;</span>
@@ -145,16 +141,17 @@
         <p>Here's more content about the article...</p>
       </div>
     </div>
-    <section class="screen" id="about-screen">
+    <section class="screen active-screen" id="about-screen">
       <div class="about-content">
         <div class="about-information">
           <div>
-            <img src="imgs/images.png" alt="" />
+            <img class="profilephoto" src="imgs/profilephotoNew.png" alt="" />
             <div>
-              <h1 class="name">Miroslay Pirasyk</h1>
-              <p>
-                Hello, I'm [Your Name] and I'm a frontend developer passionate
-                about creating engaging user experiences...
+              <h1 class="name">Miroslay Pisaryk</h1>
+              <p class="intro-text">
+                I'm a frontend developer. I can perform variety of workloads. I
+                know HTML, CSS, JavaScript. Keep learning react.js, tailwind and
+                other technologies.
               </p>
             </div>
           </div>
@@ -187,7 +184,9 @@
             </ul>
           </div>
         </div>
-        <div class="container workig-experience"><h1>work experience</h1></div>
+        <div class="container workig-experience">
+          <h1>work experience</h1>
+        </div>
       </div>
     </section>
     <footer>
