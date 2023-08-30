@@ -83,26 +83,14 @@ main {
 
   opacity: 0;
 }
-main > div span {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 1rem;
-  color: #717171;
-}
+
 main > div h1 {
   text-transform: capitalize;
   letter-spacing: 0.8px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-  background-color: #005baa;
-  background-image: linear-gradient(45deg, #bdbdbd, #ffffff);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-decoration-color: transparent;
+  color: rgb(53, 48, 48);
 }
 main > div hr {
   display: block;
@@ -114,6 +102,7 @@ main > div hr {
 }
 main > div p {
   line-height: 1.6;
+  font-size: 19px;
 }
 main a {
   display: inline-block;
@@ -124,9 +113,7 @@ main a {
   background: #fff;
   transition: 0.3s ease-in-out;
 }
-main div a {
-  padding: 0.625rem 1.875rem;
-}
+
 .about-projects {
   width: 30%;
   height: fit-content;
@@ -140,7 +127,8 @@ main div a {
 }
 .swiper {
   width: 60%;
-  height: 50vh;
+  max-height: 800px;
+  height: 65vh;
   border-radius: 20px;
 }
 .swiper-slide {
@@ -151,33 +139,61 @@ main div a {
   background-image: url(imgs/Meteor.svg);
   border-radius: 20px;
 }
-.swiper-slide div {
+.about-project-container {
   border-radius: 15px;
+  width: 85%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
 }
-.swiper-slide h2 {
-  color: #fff;
+
+.img-container-sp {
+  height: 100%;
+  max-height: 150px;
+  overflow: auto; /* Используем auto для автоматического показа полос прокрутки при необходимости */
+  overflow-x: hidden;
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 239px;
+  margin: 0 auto;
+}
+.img-container-sp img {
+  max-height: 1000px; /* Ограничиваем максимальную высоту картинки */
+  width: min-content; /* Поддерживаем пропорции картинки */
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide h1 {
+  color: #424040;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 3rem;
   line-height: 1.4;
-  margin-bottom: 0.625rem;
-  padding: 0 0 0 1.563rem;
   text-transform: uppercase;
+  height: 134px;
 }
 .swiper-button {
   display: flex;
   justify-content: center;
-  margin-top: 130px;
+
   align-items: flex-end;
 }
+
 .swiper-button a {
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  width: 200px;
 }
-.swiper-button p {
-  margin-left: 10px;
+.about-project-text {
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 .swiper-button img {
   width: 25px;
@@ -186,11 +202,6 @@ main div a {
   color: #000000;
   font-family: 'Roboto' sans-serif;
   font-weight: 300;
-  font-size: 0.75rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .swiper-button-wrapper {
   display: flex;
@@ -239,7 +250,6 @@ main div a {
   font-size: 16px;
   font-weight: bolder;
   width: fit-content;
-  padding: 10px 30px;
   border: 0;
   border-radius: 10px;
   box-shadow: 40%px;
@@ -319,9 +329,6 @@ main div a {
   cursor: pointer;
 }
 
-.project-imgs {
-  width: 150px;
-}
 /* Footer styles */
 footer {
   background-color: rgb(53, 48, 48, 0.95);
@@ -397,4 +404,10 @@ footer p {
 }
 .name {
   font-size: 35px;
+}
+#about-block-title {
+  color: #d1d1d1;
+}
+.project-img {
+  border-radius: 10px;
 }
