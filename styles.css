@@ -157,6 +157,7 @@ main a {
   width: 90%;
   max-width: 239px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 .img-container-sp img {
   max-height: 1000px; /* Ограничиваем максимальную высоту картинки */
@@ -165,6 +166,16 @@ main a {
 
   top: 0;
   left: 0;
+}
+.img-container {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 250px;
+}
+.img-container iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide h1 {
@@ -175,6 +186,7 @@ main a {
   line-height: 1.4;
   text-transform: uppercase;
   height: 134px;
+  margin-bottom: 10px;
 }
 .swiper-button {
   display: flex;
@@ -192,8 +204,9 @@ main a {
   width: 200px;
 }
 .about-project-text {
-  margin-bottom: 10px;
-  font-size: 17px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: 500;
 }
 .swiper-button img {
   width: 25px;
@@ -201,7 +214,6 @@ main a {
 .swiper-slide p {
   color: #000000;
   font-family: 'Roboto' sans-serif;
-  font-weight: 300;
 }
 .swiper-button-wrapper {
   display: flex;
