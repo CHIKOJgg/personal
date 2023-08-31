@@ -18,15 +18,15 @@ let swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
-    },
-    768: {
       slidesPerView: 1,
     },
-    1024: {
+    1200: {
       slidesPerView: 2,
     },
-    1560: {
+    1440: {
+      slidesPerView: 2,
+    },
+    1920: {
       slidesPerView: 3,
     },
   },
