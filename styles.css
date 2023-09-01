@@ -432,9 +432,11 @@ footer p {
 .close-modal {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #333;
+  background-color: rgb(53, 48, 48,);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width:100px;
+  height:40px;
 }
