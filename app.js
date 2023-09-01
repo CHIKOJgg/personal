@@ -1,4 +1,3 @@
-const modalButtons = document.querySelectorAll('.modal-button');
 const modals = document.querySelectorAll('.modal');
 const closeButton = document.querySelectorAll('.close-button');
 let swiper = new Swiper('.swiper', {
@@ -37,3 +36,22 @@ function showScreen(screenId) {
   const selectedScreen = document.getElementById(screenId);
   selectedScreen.classList.add('active-screen');
 }
+let swiperClose = document.getElementById('swiper');
+
+var buttons = document.querySelectorAll('.modal-button');
+
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    var modalId = button.getAttribute('data-modal-id');
+
+    var modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+    swiperClose.style.display = 'none';
+
+    var closeModalButton = modal.querySelector('.close-modal');
+    closeModalButton.addEventListener('click', function () {
+      modal.style.display = 'none';
+      swiperClose.style.display = 'block';
+    });
+  });
+});
