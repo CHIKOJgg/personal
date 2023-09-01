@@ -38,17 +38,17 @@ function showScreen(screenId) {
 }
 let swiperClose = document.getElementById('swiper');
 
-var buttons = document.querySelectorAll('.modal-button');
+let buttons = document.querySelectorAll('.modal-button');
 
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
-    var modalId = button.getAttribute('data-modal-id');
+    let modalId = button.getAttribute('data-modal-id');
 
-    var modal = document.getElementById(modalId);
+    let modal = document.getElementById(modalId);
     modal.style.display = 'block';
     swiperClose.style.display = 'none';
 
-    var closeModalButton = modal.querySelector('.close-modal');
+    let closeModalButton = modal.querySelector('.close-modal');
     closeModalButton.addEventListener('click', function () {
       modal.style.display = 'none';
       swiperClose.style.display = 'block';
