@@ -437,6 +437,7 @@ footer p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width:180px;
+  width:30%;
   height:40px;
+  font-size: 20px;
 }
