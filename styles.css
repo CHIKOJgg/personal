@@ -147,31 +147,11 @@ main a {
   flex-direction: column;
 }
 
-.img-container-sp {
-  height: 100%;
-  max-height: 150px;
-  overflow: auto; /* Используем auto для автоматического показа полос прокрутки при необходимости */
-  overflow-x: hidden;
-  position: relative;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 239px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-.img-container-sp img {
-  max-height: 1000px; /* Ограничиваем максимальную высоту картинки */
-  width: min-content; /* Поддерживаем пропорции картинки */
-  position: absolute;
-
-  top: 0;
-  left: 0;
-}
 .img-container {
   margin: 0 auto;
   margin-bottom: 15px;
-  width: 90%;
-  height: 250px;
+  width: 95%;
+  height: 85%;
 }
 .img-container iframe {
   width: 100%;
@@ -202,6 +182,7 @@ main a {
   justify-content: center;
   height: 40px;
   width: 200px;
+  background-color: white;
 }
 .about-project-text {
   margin-bottom: 15px;
@@ -219,6 +200,7 @@ main a {
   display: flex;
   justify-content: center;
   width: max-content;
+  width: 80%;
 }
 
 .screen {
@@ -263,9 +245,10 @@ main a {
   font-weight: bolder;
   width: fit-content;
   border: 0;
+  width: 60%;
+  height: 40px;
   border-radius: 10px;
-  box-shadow: 40%px;
-  background-color: transparent;
+  background-color: #fff;
 }
 .post-button :hover {
   cursor: pointer;
@@ -422,4 +405,36 @@ footer p {
 }
 .project-img {
   border-radius: 10px;
+}
+/* Стили модальных окон */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  height: 80%;
+}
+
+/* Скрытие модальных окон */
+.close-modal {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
