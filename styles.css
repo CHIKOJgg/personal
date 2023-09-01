@@ -103,6 +103,7 @@ main > div hr {
 main > div p {
   line-height: 1.6;
   font-size: 19px;
+  color: #fff;
 }
 main a {
   display: inline-block;
