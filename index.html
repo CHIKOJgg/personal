@@ -59,18 +59,11 @@
           more
         </p>
       </div>
-      <div class="swiper">
+      <div class="swiper" id="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-slide--one">
             <div class="about-project-container">
               <h1>Dicegame</h1>
-              <div class="img-container">
-                <iframe
-                  class="project-img"
-                  src="https://chikojgg.github.io/Dice-game/"
-                  frameborder="0"
-                ></iframe>
-              </div>
 
               <p class="about-project-text">
                 The old fashion dice game where you need to get a 100 points by
@@ -79,10 +72,9 @@
               </p>
               <div class="swiper-button">
                 <div class="swiper-button-wrapper">
-                  <a href=""
-                    ><img src="imgs/github.svg" />
-                    <p>View deploy</p></a
-                  >
+                  <button class="modal-button" data-modal-id="modal-1">
+                    btn 1
+                  </button>
                 </div>
               </div>
             </div>
@@ -90,13 +82,7 @@
           <div class="swiper-slide swiper-slide--two">
             <div class="about-project-container">
               <h1>Restaurant landing</h1>
-              <div class="img-container">
-                <iframe
-                  class="project-img"
-                  src="https://chikojgg.github.io/burgers/"
-                  frameborder="0"
-                ></iframe>
-              </div>
+
               <p class="about-project-text">
                 The landing for burget restaurant. It has 3 sections: reason why
                 you should choose this place, menu of burgers and form to order
@@ -104,10 +90,9 @@
               </p>
               <div class="swiper-button">
                 <div class="swiper-button-wrapper">
-                  <a href=""
-                    ><img src="imgs/github.svg" />
-                    <p>View deploy</p></a
-                  >
+                  <button class="modal-button" data-modal-id="modal-2">
+                    btn 2
+                  </button>
                 </div>
               </div>
             </div>
@@ -115,20 +100,13 @@
           <div class="swiper-slide swiper-slide--three">
             <div class="about-project-container">
               <h1>Aim training</h1>
-              <div class="img-container">
-                <iframe
-                  class="project-img"
-                  src="https://chikojgg.github.io/Aim-game/"
-                  frameborder="0"
-                ></iframe>
-              </div>
+
               <p class="about-project-text">prjct3 title</p>
               <div class="swiper-button">
                 <div class="swiper-button-wrapper">
-                  <a href=""
-                    ><img src="imgs/github.svg" />
-                    <p>View deploy</p></a
-                  >
+                  <button class="modal-button" data-modal-id="modal-3">
+                    btn 3
+                  </button>
                 </div>
               </div>
             </div>
@@ -136,20 +114,13 @@
           <div class="swiper-slide swiper-slide--four">
             <div class="about-project-container">
               <h1>Image slider</h1>
-              <div class="img-container">
-                <iframe
-                  class="project-img"
-                  src="https://chikojgg.github.io/Imgs-Slider/"
-                  frameborder="0"
-                ></iframe>
-              </div>
+
               <p class="about-project-text">prjct4 title</p>
               <div class="swiper-button">
                 <div class="swiper-button-wrapper">
-                  <a href=""
-                    ><img src="imgs/github.svg" />
-                    <p>View deploy</p></a
-                  >
+                  <button class="modal-button" data-modal-id="modal-4">
+                    btn 4
+                  </button>
                 </div>
               </div>
             </div>
@@ -157,13 +128,7 @@
           <div class="swiper-slide swiper-slide--five">
             <div class="about-project-container">
               <h1>password creation</h1>
-              <div class="img-container">
-                <iframe
-                  class="project-img"
-                  src="https://chikojgg.github.io/password-creation-site/"
-                  frameborder="0"
-                ></iframe>
-              </div>
+
               <p class="about-project-text">
                 prjct5 title Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Dignissimos eaque deleniti quam reiciendis, nam nihil a
@@ -171,10 +136,9 @@
               </p>
               <div class="swiper-button">
                 <div class="swiper-button-wrapper">
-                  <a href=""
-                    ><img src="imgs/github.svg" />
-                    <p>View deploy</p></a
-                  >
+                  <button class="modal-button" data-modal-id="modal-5">
+                    btn 5
+                  </button>
                 </div>
               </div>
             </div>
@@ -183,11 +147,71 @@
         <div class="swiper-pagination"></div>
       </div>
     </main>
-    <div id="modal" class="modal">
+    <div id="modal-1" class="modal">
       <div class="modal-content">
-        <span class="close-button" id="close-button">&times;</span>
-        <h2>Modal Window</h2>
-        <p>Here's more content about the article...</p>
+        <!-- Содержимое модального окна 1 -->
+        <p>Dicegame</p>
+        <div class="img-container">
+          <iframe
+            src="https://chikojgg.github.io/Dice-game/"
+            class="project-img"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+      <div class="modal-content">
+        <p>Restaurant landing</p>
+        <div class="img-container">
+          <iframe
+            class="project-img"
+            src="https://chikojgg.github.io/burgers/"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+    <div id="modal-3" class="modal">
+      <div class="modal-content">
+        <p>Aim training game</p>
+        <div class="img-container">
+          <iframe
+            src="https://chikojgg.github.io/Aim-game/"
+            class="project-img"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+    <div id="modal-4" class="modal">
+      <div class="modal-content">
+        <p>Image slider</p>
+        <div class="img-container">
+          <iframe
+            src="https://chikojgg.github.io/Imgs-Slider/"
+            class="project-img"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+    <div id="modal-5" class="modal">
+      <div class="modal-content">
+        <p>Password creation tool</p>
+        <div class="img-container">
+          <iframe
+            src="https://chikojgg.github.io/password-creation-site/"
+            class="project-img"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <button class="close-modal">Close</button>
       </div>
     </div>
     <section class="screen active-screen" id="about-screen">
