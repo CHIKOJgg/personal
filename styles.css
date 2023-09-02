@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @keyframes dropdownAnim {
   0% {
-    max-height: 0;
+   max-height: 0px;
   }
   100% {
     max-height: 155px;
   }
 }
-
+@keyframes modalAnim{
+0%{width: 0%;
+  height: 0%;}
+90%{width: 83%;
+  height: 88%;}
+100%{width: 80%;
+  height: 85%;}
+}
 body,
 h1,
 h2,
@@ -418,6 +425,7 @@ footer p {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  animation: modalAnim 10s
 }
 
 .modal-content {
