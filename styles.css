@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @keyframes dropdownAnim {
   0% {
-   max-height: 0px;
+    max-height: 0px;
   }
   100% {
     max-height: 155px;
   }
 }
-@keyframes modalAnim{
-0%{width: 0%;
-  height: 0%;}
-90%{width: 83%;
-  height: 88%;}
-100%{width: 80%;
-  height: 85%;}
+@keyframes modalAnim {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 100%;
+  }
 }
 body,
 h1,
@@ -425,9 +426,16 @@ footer p {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
-  animation: modalAnim 10s
+  animation: modalAnim 0.65s;
 }
-
+.modal h1 {
+  color: #424040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
 .modal-content {
   background-color: #fff;
   padding: 20px;
@@ -446,7 +454,7 @@ footer p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width:30%;
-  height:40px;
+  width: 30%;
+  height: 40px;
   font-size: 20px;
 }
