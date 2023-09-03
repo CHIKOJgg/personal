@@ -10,11 +10,24 @@
 }
 @keyframes modalAnim {
   0% {
+    opacity: 0;
     height: 0%;
   }
 
   100% {
+    opacity: 1;
     height: 100%;
+  }
+}
+@keyframes closeModalAnim {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
   }
 }
 body,
@@ -369,7 +382,7 @@ footer p {
 }
 .profilephoto {
   width: 35%;
-
+  height: min-content;
   border-radius: 15px;
 }
 .container {
@@ -426,7 +439,7 @@ footer p {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
-  animation: modalAnim 0.65s;
+  animation: modalAnim 0.6s;
 }
 .modal h1 {
   color: #424040;
@@ -457,4 +470,7 @@ footer p {
   width: 30%;
   height: 40px;
   font-size: 20px;
+}
+.modal-anim {
+  animation: closeModalAnim 0.4s;
 }
