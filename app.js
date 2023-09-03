@@ -45,13 +45,18 @@ buttons.forEach(function (button) {
     let modalId = button.getAttribute('data-modal-id');
 
     let modal = document.getElementById(modalId);
+
     modal.style.display = 'block';
     swiperClose.style.display = 'none';
 
     let closeModalButton = modal.querySelector('.close-modal');
     closeModalButton.addEventListener('click', function () {
-      modal.style.display = 'none';
+      modal.style.animation = 'closeModalAnim 0.5s ';
       swiperClose.style.display = 'block';
+      setTimeout(() => {
+        modal.style.removeProperty('animation');
+        modal.style.display = 'none';
+      }, 450);
     });
   });
 });
