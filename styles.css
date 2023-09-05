@@ -41,7 +41,7 @@ p {
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background: url(imgs/SimpleShiny.svg) round;
+  background: url(imgs/Simple\ Shinyblack.svg) round;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -113,13 +113,23 @@ main > div h1 {
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
   color: rgb(53, 48, 48);
 }
-main > div hr {
+.descriptionhr {
   display: block;
-  background: #005baa;
+  background: #c05454;
   height: 0.25rem;
-  width: 60%;
+  width: 94%;
   border: none;
-  margin: 1.125rem 0 1.1875rem;
+  margin: 1.125rem auto 1.1875rem;
+  border-radius: 5px;
+}
+.projecthr {
+  display: block;
+  background: #c05454c9;
+  height: 0.3rem;
+  width: 100%;
+  border: none;
+  margin: 1.125rem auto 1.1875rem;
+  border-radius: 5px;
 }
 main > div p {
   line-height: 1.6;
@@ -158,7 +168,7 @@ main a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(imgs/Meteor.svg);
+  background-color: #dbdbdb;
   border-radius: 20px;
 }
 .about-project-container {
@@ -208,7 +218,7 @@ main a {
 }
 .about-project-text {
   margin-bottom: 15px;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
 }
 .swiper-button img {
@@ -264,14 +274,15 @@ main a {
   flex-direction: column;
 }
 .modal-button {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bolder;
   width: fit-content;
   border: 0;
   width: 60%;
   height: 40px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgb(53, 48, 48);
+  color: rgb(215, 215, 215);
 }
 .post-button :hover {
   cursor: pointer;
