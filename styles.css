@@ -468,6 +468,7 @@ footer p {
   text-align: center;
   width: 80%;
   height: 85%;
+  overflow: hidden;
 }
 
 /* Скрытие модальных окон */
