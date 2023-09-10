@@ -8,6 +8,16 @@
     max-height: 155px;
   }
 }
+@keyframes nameTextAnim {
+  0% {
+    top: 50%;
+    opacity: 0.2;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 @keyframes modalAnim {
   0% {
     opacity: 0;
@@ -45,6 +55,12 @@
   .swiper {
     width: 70%;
   }
+  .list-of-skills {
+    flex-direction: row;
+  }
+  .list-of-skills li {
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -65,9 +81,15 @@
   .dropdown {
     left: -205%;
   }
-  .projectimg{
-    width:55%;
-    }
+  .projectimg {
+    width: 55%;
+  }
+  .list-of-skills {
+    flex-direction: column;
+  }
+  .list-of-skills li {
+    width: 80%;
+  }
 }
 
 body,
@@ -343,7 +365,7 @@ main a {
   animation: dropdownAnim 200ms;
   z-index: 2;
   left: -132%;
-  top: 33px;
+  top: 20px;
 }
 
 .dropdown-item {
@@ -428,19 +450,30 @@ footer p {
   margin: 80px 0 100px;
 }
 .about-information div {
-  max-width: 800px;
   display: flex;
+  justify-content: center;
 }
 .about-information div div {
   display: flex;
   flex-direction: column;
-  width: 400px;
   margin: 25px;
 }
 .profilephoto {
-  width: 35%;
+  width: 70%;
   height: min-content;
   border-radius: 15px;
+  opacity: 0.6;
+}
+.about-information-content {
+  position: relative;
+  text-align: center;
+}
+.about-information-text {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  color: #2e2e2e;
+  width: 30%;
 }
 .container {
   margin-bottom: 60px;
@@ -454,11 +487,26 @@ footer p {
   border-radius: 13px;
   min-height: 300px;
 }
-.workig-experience {
+.skills-content {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.5vw;
+}
+.skills {
+  border-radius: 0;
+}
+.skills-content h1 {
+  text-align: center;
+}
+.list-of-skills {
+  padding: 0;
+  display: flex;
 }
 .list-of-skills li {
+  margin-right: 5%;
   list-style-type: none;
 }
+
 .list-of-skills li img {
   width: 40px;
 }
@@ -477,7 +525,12 @@ footer p {
   font-style: oblique;
 }
 .name {
-  font-size: 35px;
+  font-size: 15vw;
+  width: 70%;
+  position: absolute;
+  z-index: -1;
+  animation: nameTextAnim 1.2s cubic-bezier(0.57, -0.01, 0, 0.98);
+  margin-top: 10%;
 }
 #about-block-title {
   color: #d1d1d1;
@@ -531,3 +584,11 @@ footer p {
 .modal-anim {
   animation: closeModalAnim 0.4s;
 }
+.technology-card {
+  margin-bottom: 20px;
+}
+.technology-logo {
+  display: flex;
+  margin-bottom: 10px;
+}
+
