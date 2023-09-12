@@ -11,7 +11,7 @@
     <title>Personal Blog</title>
   </head>
   <body>
-    <header>
+    <header class="header-desktop">
       <nav>
         <ul>
           <li><a href="#" onclick="showScreen('main-screen')">Portfolio</a></li>
@@ -21,34 +21,74 @@
             <div class="dropdown-menu">
               <a href="#">Contact</a>
               <ul class="dropdown">
-                <li class="dropdown-item">
-                  <div class="dropdown-item-content">
-                    <img src="imgs/linkedin-original.svg" alt="" />
-                    <a
-                      href="https://www.linkedin.com/in/miroslav-pisaryk-953490261"
-                      >LinkedIn</a
-                    >
-                  </div>
+                <li>
+                  <img src="imgs/linkedin-original.svg" alt="" />
+                  <a
+                    href="https://www.linkedin.com/in/miroslav-pisaryk-953490261"
+                    >LinkedIn</a
+                  >
                 </li>
-                <li class="dropdown-item">
-                  <div class="dropdown-item-content">
-                    <img src="imgs/github.svg" alt="" />
-                    <a href="https://github.com/CHIKOJgg">GitHub</a>
-                  </div>
+                <li class="dropdown-item-content">
+                  <img src="imgs/github.svg" alt="" />
+                  <a href="https://github.com/CHIKOJgg">GitHub</a>
                 </li>
-                <li class="dropdown-item">
+                <li>
                   <img src="imgs/instagram.svg" alt="" />
-                  <div class="dropdown-item-content">
-                    <a href="https://www.instagram.com/non.accessable/">
-                      Instagram</a
-                    >
-                  </div>
+                  <a href="https://www.instagram.com/non.accessable/">
+                    Instagram</a
+                  >
                 </li>
               </ul>
             </div>
           </li>
         </ul>
       </nav>
+    </header>
+    <header class="mobile-header">
+      <div class="burger-menu-content">
+        <div>
+          <img class="burger-menu" src="imgs/burger-menu-1.svg" alt="" />
+        </div>
+        <div class="burger-menu-item-wrapper">
+          <div class="burger-menu-item">
+            <a href="#" onclick="showScreen('main-screen')">Portfolio</a>
+          </div>
+          <div class="burger-menu-item">
+            <a href="#" onclick="showScreen('about-screen')">About me</a>
+          </div>
+          <div class="burger-menu-item" id="dropdown-list">
+            <div class="contact-me">
+              <a href="">Conact me</a>
+              <img src="imgs/nav-arrow-down.svg" alt="" />
+            </div>
+            <ul>
+              <li>
+                <div>
+                  <img src="imgs/linkedin-original.svg" alt="" />
+                  <a
+                    href="https://www.linkedin.com/in/miroslav-pisaryk-953490261"
+                    >LinkedIn</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/github.svg" alt="" />
+                  <a href="https://github.com/CHIKOJgg">GitHub</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="imgs/instagram.svg" alt="" />
+                  <a href="https://www.instagram.com/non.accessable/">
+                    Instagram</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="screen" id="main-screen">
       <div class="about-projects container">
@@ -302,20 +342,12 @@
         <div>
           <div>
             <div class="container workig-experience">
-
               <h1>Working experience</h1>
-               <ul>
-                  <li><div><p>08.2023 - now <p/>
-<span>As a freelancer on upWork<span/><div/></li>
-<li><div><p><p/><div/></li>
-                
-                </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="screen" id="work-screen"></section>
     <footer>
       <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
