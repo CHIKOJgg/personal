@@ -240,7 +240,7 @@ main a {
 .about-project-container {
   border-radius: 15px;
   width: 85%;
-  height: 88%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   padding: 30px;
