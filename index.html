@@ -46,8 +46,13 @@
     </header>
     <header class="mobile-header">
       <div class="burger-menu-content">
-        <div>
-          <img class="burger-menu" src="imgs/burger-menu-1.svg" alt="" />
+        <div id="burger-menu">
+          <img
+            class="burger-menu"
+            data-isopened="0"
+            src="imgs/burger-menu-1.svg"
+            alt=""
+          />
         </div>
         <div class="burger-menu-item-wrapper">
           <div class="burger-menu-item">
@@ -57,11 +62,11 @@
             <a href="#" onclick="showScreen('about-screen')">About me</a>
           </div>
           <div class="burger-menu-item" id="dropdown-list">
-            <div class="contact-me">
-              <a href="">Conact me</a>
+            <div class="contact-me" data-is-dropdownopened="0">
+              <p>Conact me</p>
               <img src="imgs/nav-arrow-down.svg" alt="" />
             </div>
-            <ul>
+            <ul class="drop-down-items">
               <li>
                 <div>
                   <img src="imgs/linkedin-original.svg" alt="" />
