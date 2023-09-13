@@ -2,7 +2,11 @@ const modals = document.querySelectorAll('.modal');
 const closeButton = document.querySelectorAll('.close-button');
 const burgerMenu = document.querySelector('.mobile-header');
 const burgerMenuButton = document.querySelector('.burger-menu');
-console.log(burgerMenuButton);
+const burgerMenuRest = document.querySelector('.burger-menu-item-wrapper');
+const mobileDropdownButton = document.querySelector('.contact-me');
+const dropDownItems = document.querySelector('.drop-down-items');
+console.log(dropDownItems);
+console.log(burgerMenuRest);
 let swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   grabCursor: true,
@@ -33,8 +37,34 @@ let swiper = new Swiper('.swiper', {
     },
   },
 });
+let isMenuOpened = burgerMenuButton.getAttribute('data-isopened');
+let isDropdownMenuOpened = mobileDropdownButton.getAttribute(
+  'data-is-dropdownopened'
+);
+burgerMenuRest.style.display = 'none';
+dropDownItems.style.display = 'none';
+burgerMenu.classList.add('close-menu');
 burgerMenuButton.addEventListener('click', function () {
-  burgerMenu.style.display = 'none';
+  if (isMenuOpened == 0) {
+    isMenuOpened++;
+    burgerMenuRest.style.display = 'block';
+    burgerMenu.classList.add('open-menu');
+    burgerMenu.classList.remove('close-menu');
+  } else if (isMenuOpened == 1) {
+    isMenuOpened--;
+    burgerMenuRest.style.display = 'none';
+    burgerMenu.classList.remove('open-menu');
+    burgerMenu.classList.add('close-menu');
+  }
+});
+mobileDropdownButton.addEventListener('click', function () {
+  if (isDropdownMenuOpened == 0) {
+    isDropdownMenuOpened++;
+    dropDownItems.style.display = 'block';
+  } else if (isDropdownMenuOpened == 1) {
+    isDropdownMenuOpened--;
+    dropDownItems.style.display = 'none';
+  }
 });
 
 function showScreen(screenId) {
