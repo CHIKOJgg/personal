@@ -1,5 +1,8 @@
 const modals = document.querySelectorAll('.modal');
 const closeButton = document.querySelectorAll('.close-button');
+const burgerMenu = document.querySelector('.mobile-header');
+const burgerMenuButton = document.querySelector('.burger-menu');
+console.log(burgerMenuButton);
 let swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   grabCursor: true,
@@ -30,6 +33,10 @@ let swiper = new Swiper('.swiper', {
     },
   },
 });
+burgerMenuButton.addEventListener('click', function () {
+  burgerMenu.style.display = 'none';
+});
+
 function showScreen(screenId) {
   const screens = document.querySelectorAll('.screen');
   screens.forEach((screen) => screen.classList.remove('active-screen'));
