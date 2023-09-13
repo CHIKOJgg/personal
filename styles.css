@@ -31,28 +31,24 @@
 }
 @keyframes burgerMenuAnimOpen {
   0% {
-    opacity: 0;
+    opacity: 0.5;
+    height: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    height: 95vh;
+  }
+}
+@keyframes dropDownMenuAnim {
+  0% {
+    opacity: 0.5;
     height: 0%;
   }
 
   100% {
     opacity: 1;
     height: 100%;
-  }
-}
-@keyframes burgerMenuAnimClose {
-  0% {
-    opacity: 1;
-    height: 100%;
-  }
-  90% {
-    height: 10%;
-    width: 100%;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    width: 0;
   }
 }
 @keyframes closeModalAnim {
@@ -99,13 +95,50 @@
   .technology-description {
     font-size: 1.5vw;
   }
+  .technology-card {
+    margin-bottom: 20px;
+  }
+  .skills-content h1 {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  .workig-experience h1 {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  .swiper {
+    min-height: 65vh;
+  }
+  .modal-button {
+    margin-right: 10%;
+
+    width: 60%;
+  }
+  .go-to-button {
+    width: 60%;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .swiper-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-button {
+    margin-bottom: 10%;
+    width: 90%;
+  }
+  .go-to-button {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 767px) {
   .screen {
     flex-direction: column;
     align-items: center;
   }
+
   .about-information {
     margin: 0px 0 50px;
   }
@@ -116,10 +149,12 @@
     width: 100%;
   }
   .technology-description {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .swiper {
     width: 100%;
+    min-height: 72vh;
+    height: 100vh;
   }
   .dropdown {
     left: -205%;
@@ -129,12 +164,33 @@
   }
   .list-of-skills {
     flex-direction: column;
+    margin-top: 11%;
   }
   .list-of-skills li {
     width: 80%;
   }
   .list-of-skills li img {
     width: 50px;
+  }
+  .about-projects {
+    width: 90%;
+  }
+  .technology-logo {
+    display: flex;
+    margin-right: 13%;
+  }
+  .technology-card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .skills-content h1 {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .workig-experience h1 {
+    text-align: center;
+    font-size: 4vw;
   }
 }
 
@@ -266,7 +322,6 @@ main a {
 }
 .swiper {
   min-height: fit-content;
-  height: 65vh;
   border-radius: 20px;
   background-color: transparent;
 }
@@ -313,9 +368,7 @@ main a {
 .go-to-button {
   font-size: 19px;
   font-weight: bolder;
-  width: fit-content;
   border: 0;
-  width: 60%;
   height: 40px;
   border-radius: 10px;
   background-color: rgb(53, 48, 48);
@@ -388,14 +441,12 @@ main a {
 .modal-button {
   font-size: 19px;
   font-weight: bolder;
-  width: fit-content;
   border: 0;
-  width: 60%;
+
   height: 40px;
   border-radius: 10px;
   background-color: rgb(53, 48, 48);
   color: rgb(215, 215, 215);
-  margin-right: 10%;
 }
 .post-button :hover {
   cursor: pointer;
@@ -427,7 +478,8 @@ main a {
 .dropdown-item-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 18px;
 }
 .dropdown img {
   width: 25px;
@@ -543,11 +595,9 @@ footer p {
 }
 .skills {
   border-radius: 0;
+  margin-bottom: 8%;
 }
-.skills-content h1 {
-  text-align: center;
-  font-size: 3vw;
-}
+
 .list-of-skills {
   padding: 0;
   display: flex;
@@ -631,21 +681,18 @@ footer p {
 .modal-anim {
   animation: closeModalAnim 0.4s;
 }
-.technology-card {
-  margin-bottom: 20px;
-}
+
 .technology-logo {
   display: flex;
-  margin-bottom: 10px;
+
+  margin-bottom: 18%;
 }
 
 .workig-experience {
   display: block;
+  border-radius: 0;
 }
-.workig-experience h1 {
-  text-align: center;
-  font-size: 3vw;
-}
+
 .mobile-header {
   box-shadow: none;
   background-color: transparent;
@@ -661,13 +708,14 @@ footer p {
 }
 .close-menu {
   background-color: transparent;
-  width: 100%;
-  height: 10%;
+  animation: burgerMenuAnimClose 0.5s;
 }
 .open-menu {
   width: 45%;
   height: 95vh;
   max-width: 170px;
+
+  animation: burgerMenuAnimOpen 0.5s ease;
 }
 .burger-menu {
   width: 40%;
@@ -707,7 +755,7 @@ footer p {
   padding: 0;
 }
 .burger-menu-item ul li {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .burger-menu-item ul li div {
   display: flex;
