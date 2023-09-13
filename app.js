@@ -61,6 +61,7 @@ mobileDropdownButton.addEventListener('click', function () {
   if (isDropdownMenuOpened == 0) {
     isDropdownMenuOpened++;
     dropDownItems.style.display = 'block';
+    dropDownItems.style.animation = 'dropDownMenuAnim 0.4s ';
   } else if (isDropdownMenuOpened == 1) {
     isDropdownMenuOpened--;
     dropDownItems.style.display = 'none';
