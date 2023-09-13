@@ -649,7 +649,7 @@ footer p {
 .mobile-header {
   box-shadow: none;
   background-color: transparent;
-  margin: 1%;
+  margin: 3%;
   padding: 0;
   background-color: #2e2e2e;
   position: fixed;
@@ -671,7 +671,7 @@ footer p {
 }
 .burger-menu {
   width: 40%;
-  margin: 5%;
+  margin: 5% 0 3% 2%;
 }
 .burger-menu-content {
   width: 100%;
