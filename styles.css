@@ -98,13 +98,18 @@
   .technology-card {
     margin-bottom: 20px;
   }
+
   .skills-content h1 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
   }
   .workig-experience h1 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
+  }
+  .who-i-am-content h1 {
+    text-align: center;
+    font-size: 2.2vw;
   }
   .swiper {
     min-height: 65vh;
@@ -138,7 +143,9 @@
     flex-direction: column;
     align-items: center;
   }
-
+  footer p {
+    font-size: 3.7vw;
+  }
   .about-information {
     margin: 0px 0 50px;
   }
@@ -149,7 +156,7 @@
     width: 100%;
   }
   .technology-description {
-    font-size: 3.3vw;
+    font-size: 3.7vw;
   }
   .swiper {
     width: 100%;
@@ -162,6 +169,7 @@
   .projectimg {
     width: 55%;
   }
+
   .list-of-skills {
     flex-direction: column;
     margin-top: 11%;
@@ -185,12 +193,22 @@
     flex-direction: row;
   }
   .skills-content h1 {
+    margin-top: 15px;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   .workig-experience h1 {
+    margin-top: 15px;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.5vw;
+  }
+  .who-i-am-content h1 {
+    text-align: center;
+    font-size: 4.5vw;
+    margin-bottom: 10%;
+  }
+  .who-i-am-content div p {
+    font-size: 3.7vw;
   }
 }
 
@@ -587,15 +605,12 @@ footer p {
   background: rgba(255, 255, 255, 0.11);
   border-radius: 13px;
   min-height: 300px;
+  margin-bottom: 8%;
 }
 .skills-content {
   width: 85%;
   margin: 0 auto;
   font-size: 1.5vw;
-}
-.skills {
-  border-radius: 0;
-  margin-bottom: 8%;
 }
 
 .list-of-skills {
@@ -684,13 +699,13 @@ footer p {
 
 .technology-logo {
   display: flex;
-
   margin-bottom: 18%;
 }
 
 .workig-experience {
   display: block;
-  border-radius: 0;
+  height: fit-content;
+  min-height: 0;
 }
 
 .mobile-header {
@@ -761,5 +776,19 @@ footer p {
   display: flex;
   align-items: center;
 }
-.working-experience-list{
-list-style-type: none;}
+.working-experience-list li {
+  margin-bottom: 25px;
+}
+.working-experience-list {
+  list-style: none;
+  padding: 15px;
+}
+.who-i-am-content {
+  width: 90%;
+  margin: 0 auto;
+  height: fit-content;
+}
+.who-i-am {
+  padding: 30px;
+  min-height: 0;
+}
