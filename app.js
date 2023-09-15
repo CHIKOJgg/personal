@@ -73,6 +73,9 @@ function showScreen(screenId) {
   screens.forEach((screen) => screen.classList.remove('active-screen'));
   const selectedScreen = document.getElementById(screenId);
   selectedScreen.classList.add('active-screen');
+  burgerMenuRest.style.display = 'none';
+  burgerMenu.classList.remove('open-menu');
+  burgerMenu.classList.add('close-menu');
 }
 let swiperClose = document.getElementById('swiper');
 
