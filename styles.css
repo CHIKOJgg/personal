@@ -12,6 +12,7 @@
   0% {
     max-height: 0px;
     transform: rotateZ(12deg);
+    border-radius: 50%;
   }
   100% {
     max-height: 100%;
@@ -829,7 +830,7 @@ footer p {
   position: fixed;
   z-index: 3;
   border-radius: 10px;
-  animation: WhoContentAnim 0.35s;
+  animation: WhoContentAnim 0.55s;
 }
 
 .who-i-am-wrapper h1 {
