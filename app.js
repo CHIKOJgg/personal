@@ -5,7 +5,9 @@ const burgerMenuButton = document.querySelector('.burger-menu');
 const burgerMenuRest = document.querySelector('.burger-menu-item-wrapper');
 const mobileDropdownButton = document.querySelector('.contact-me');
 const dropDownItems = document.querySelector('.drop-down-items');
-console.log(dropDownItems);
+const whoIamBtn = document.getElementById('close');
+const whoIam = document.querySelector('#who-screen');
+console.log(whoIam, whoIamBtn);
 console.log(burgerMenuRest);
 let swiper = new Swiper('.swiper', {
   effect: 'coverflow',
@@ -37,6 +39,11 @@ let swiper = new Swiper('.swiper', {
     },
   },
 });
+function closeBurgerMenu() {
+  burgerMenuRest.style.display = 'none';
+  burgerMenu.classList.remove('open-menu');
+  burgerMenu.classList.add('close-menu');
+}
 let isMenuOpened = burgerMenuButton.getAttribute('data-isopened');
 let isDropdownMenuOpened = mobileDropdownButton.getAttribute(
   'data-is-dropdownopened'
@@ -52,11 +59,18 @@ burgerMenuButton.addEventListener('click', function () {
     burgerMenu.classList.remove('close-menu');
   } else if (isMenuOpened == 1) {
     isMenuOpened--;
-    burgerMenuRest.style.display = 'none';
-    burgerMenu.classList.remove('open-menu');
-    burgerMenu.classList.add('close-menu');
+    closeBurgerMenu();
   }
 });
+function display() {
+  whoIam.style.display = 'block';
+  closeBurgerMenu();
+  whoIam.classList.add('blur');
+}
+whoIamBtn.addEventListener('click', function () {
+  whoIam.style.display = 'none';
+});
+
 mobileDropdownButton.addEventListener('click', function () {
   if (isDropdownMenuOpened == 0) {
     isDropdownMenuOpened++;
@@ -73,9 +87,7 @@ function showScreen(screenId) {
   screens.forEach((screen) => screen.classList.remove('active-screen'));
   const selectedScreen = document.getElementById(screenId);
   selectedScreen.classList.add('active-screen');
-  burgerMenuRest.style.display = 'none';
-  burgerMenu.classList.remove('open-menu');
-  burgerMenu.classList.add('close-menu');
+  closeBurgerMenu();
 }
 let swiperClose = document.getElementById('swiper');
 
