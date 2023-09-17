@@ -16,7 +16,13 @@
         <ul>
           <li><a href="#" onclick="showScreen('main-screen')">Portfolio</a></li>
           <li><a href="#" onclick="showScreen('about-screen')">About me</a></li>
-
+          <li>
+            
+              <a href="#" id="who-i-am-button" onclick="display('who-screen')"
+                >Who I am</a
+              >
+            </div>
+          </li>
           <li>
             <div class="dropdown-menu">
               <a href="#">Contact</a>
@@ -60,6 +66,11 @@
           </div>
           <div class="burger-menu-item">
             <a href="#" onclick="showScreen('about-screen')">About me</a>
+          </div>
+          <div class="burger-menu-item">
+            <a href="#" id="who-i-am-button" onclick="display('who-screen')"
+              >Who I am</a
+            >
           </div>
           <div class="burger-menu-item" id="dropdown-list">
             <div class="contact-me" data-is-dropdownopened="0">
@@ -240,7 +251,6 @@
             src="https://chikojgg.github.io/Dice-game/"
             class="project-img"
             frameborder="0"
-loading="lazy"alt="..."
           ></iframe>
         </div>
         <button class="close-modal">Close</button>
@@ -254,7 +264,7 @@ loading="lazy"alt="..."
           <iframe
             class="project-img"
             src="https://chikojgg.github.io/burgers/"
-            frameborder="0"loading="lazy"alt="..."
+            frameborder="0"
           ></iframe>
         </div>
         <button class="close-modal">Close</button>
@@ -266,7 +276,7 @@ loading="lazy"alt="..."
         <div class="img-container">
           <iframe
             src="https://chikojgg.github.io/Aim-game/"
-            class="project-img"loading="lazy"alt="..."
+            class="project-img"
             frameborder="0"
           ></iframe>
         </div>
@@ -279,7 +289,7 @@ loading="lazy"alt="..."
         <div class="img-container">
           <iframe
             src="https://chikojgg.github.io/Imgs-Slider/"
-            class="project-img"loading="lazy"alt="..."
+            class="project-img"
             frameborder="0"
           ></iframe>
         </div>
@@ -292,7 +302,7 @@ loading="lazy"alt="..."
         <div class="img-container">
           <iframe
             src="https://chikojgg.github.io/password-creation-site/"
-            class="project-img"loading="lazy"alt="..."
+            class="project-img"
             frameborder="0"
           ></iframe>
         </div>
@@ -307,19 +317,7 @@ loading="lazy"alt="..."
             <h1 class="name">Miroslay Pisaryk</h1>
           </div>
         </div>
-        <div class="who-i-am container">
-          <div class="who-i-am-content">
-            <h1>Who I am</h1>
-            <div>
-              <p>
-                I'm a beginner frontend developer. I can perform variety of
-                workloads. I know HTML, CSS, JavaScript. Keep learning react.js,
-                tailwind and other technologies. Leaning React and creating
-                great responsive UI is my first and the most importamt goal.
-              </p>
-            </div>
-          </div>
-        </div>
+
         <div class="container skills">
           <div class="skills-content">
             <div><h1>My stack of technologies</h1></div>
@@ -381,24 +379,45 @@ loading="lazy"alt="..."
             </ul>
           </div>
         </div>
-
-        <div class="container workig-experience">
-          <div>
-            <h1>Working experience</h1>
-            <ul class="working-experience-list">
-              <li>
-                <p class="technology-description">
-                  Working as a freelancer on UpWork
-                </p>
-              </li>
-              <li>
-                <p class="technology-description">
-                  I have no experence in permanent job, but I really want to get
-                  it
-                </p>
-              </li>
-            </ul>
+      </div>
+    </section>
+    <section class="screen" id="who-screen">
+      <div class="who-i-am-wrapper">
+        <div class="who-i-am">
+          <div class="who-i-am-content">
+            <h1>Who I am</h1>
+            <div>
+              <p>
+                I'm a beginner frontend developer. I can perform variety of
+                workloads. I know HTML, CSS, JavaScript. Keep learning react.js,
+                tailwind and other technologies. Leaning React and creating
+                great responsive UI is my first and the most importamt goal.
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="workig-experience">
+          <div class="workig-experience-content">
+            <h1>Working experience</h1>
+
+            <div>
+              <p class="technology-description">
+                Working as a freelancer on UpWork
+              </p>
+            </div>
+            <div>
+              <p class="technology-description">
+                I have no experence in permanent job, but I really want to get
+                it
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="closeWhoIam">
+          <button onclick="close()" class="close-modal" id="close">
+            Close
+          </button>
         </div>
       </div>
     </section>
