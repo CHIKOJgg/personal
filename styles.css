@@ -830,7 +830,7 @@ footer p {
   position: fixed;
   z-index: 3;
   border-radius: 10px;
-  animation: WhoContentAnim 0.55s;
+  animation: WhoContentAnim 0.35s;
 }
 
 .who-i-am-wrapper h1 {
