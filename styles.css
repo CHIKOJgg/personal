@@ -8,6 +8,15 @@
     max-height: 155px;
   }
 }
+@keyframes WhoContentAnim {
+  0% {
+    max-height: 0px;
+    transform: rotateZ(12deg);
+  }
+  100% {
+    max-height: 100%;
+  }
+}
 @keyframes nameTextAnim {
   0% {
     top: 50%;
@@ -122,6 +131,19 @@
   .go-to-button {
     width: 60%;
   }
+  .who-i-am-wrapper p {
+    color: #16d9e3;
+    line-height: 175%;
+    font-size: 1.5vw;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .who-i-am-wrapper h1 {
+    font-size: 2.5vw;
+  }
+  #close {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -209,6 +231,17 @@
     text-align: center;
     font-size: 4.5vw;
     margin-bottom: 10%;
+  }
+  .who-i-am-wrapper p {
+    color: #16d9e3;
+    line-height: 175%;
+    font-size: 4.5vw;
+  }
+  #close {
+    width: 60%;
+  }
+  .who-i-am-wrapper h1 {
+    font-size: 6vw;
   }
 }
 
@@ -796,16 +829,12 @@ footer p {
   position: fixed;
   z-index: 3;
   border-radius: 10px;
+  animation: WhoContentAnim 0.35s;
 }
 
-.who-i-am-wrapper p {
-  color: #c05454;
-  line-height: 175%;
-  font-size: 4.5vw;
-}
 .who-i-am-wrapper h1 {
   color: #317eb6;
-  font-size: 146%;
+  margin-bottom: 6.3%;
 }
 .who-i-am-wrapper {
   width: 90%;
@@ -815,6 +844,7 @@ footer p {
   justify-content: center;
   flex-direction: column;
 }
+
 #closeWhoIam {
   display: flex;
   justify-content: center;
@@ -825,9 +855,11 @@ footer p {
 }
 #close {
   background-color: #2e2e2e9c;
-  width: 60%;
+
+  font-weight: 700;
 }
 #closeWhoIam :hover {
   background-color: transparent;
-  color: #2e2e2e;
+  color: #000000;
 }
+
